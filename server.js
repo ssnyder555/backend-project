@@ -3,6 +3,9 @@ const express = require('express');
 const app     = express();
 const producersController = require('./controllers/producers.js');
 
+// require our database here:
+require('./db/db');
+
 
 // We need our index/show,edit page to render at top
 app.get('/', (req, res) => {
